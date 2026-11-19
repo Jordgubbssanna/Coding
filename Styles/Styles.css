@@ -1,0 +1,312 @@
+
+/* Importering av google fonts- Lemonada-------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lemonada", cursive;
+}
+
+:root {
+    /* Color */
+    --color-white: white;
+    --color-black: black;
+    --color-lavender: lavender;
+
+    /* font size */
+        --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /* font waight */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* border radius */
+    --border-radius-s: 8px;
+    --border-radius-m: 20px;
+    --border-radius-circle: 50%;
+
+    /* Site max width */
+    --site-max-width: 1300px;
+}
+
+/* stilval för hela sidan-------------------------------------------------*/
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.section-content {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: var(--site-max-width);
+}
+
+img {
+    width: 100%;
+}
+
+/* Färg och stilval för menu och menyval*/
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background: var(--color-lavender);
+}
+
+header .navbar {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text {
+    color: black;
+    font-size: var(--font-size-xl);
+    font-weight: 300;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-menu .nav-link {
+    padding: 5px 10px;
+    color: black;
+    font-size: var(--font-size-m);
+    background: lavender;
+    border-radius: var(--border-radius-m)
+}
+
+.navbar .nav-menu .nav-link:hover {
+    color: var(--color-black);
+    background: var(--color-white);
+}
+
+
+/* Här börjar stilval för huvuddelen---------------------------------------------*/
+.hero-section {
+    min-height: 100vh;
+    background: var(--color-lavender);
+}
+
+.hero-section .section-content {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 1800px;
+}
+
+.hero-section .section-content .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-section .section-content .hero-details {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: var(--color-black);
+    padding: 10px 20px;
+}
+
+.hero-section .hero-details .title {
+    font-size: var(--font-size-xxl);
+    color: var(--color-black);
+    font-weight: var(--font-weight-bold);
+    font-family: Lemonada;
+}
+
+.hero-section .hero-details .subtitle {
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    font-family: libre bodoni;
+}
+
+.hero-section .hero-details .description {
+    max-width: 50%;
+    margin: 24px 0 40px;
+    font-size: var(--font-size-m);
+    font-family: libre bodoni;
+}
+
+
+.hero-section .hero-details .buttons {
+    display: flex;
+    gap: 23px;
+}
+
+.hero-section .hero-details .button {
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    margin-right: 10px;
+    color: var(--color-black);
+    border-radius: var(--border-radius-m);
+    max-width: 200px;
+    background: transparent;
+    font-weight: var(--font-weight-medium);
+}
+
+.hero-section .hero-details .button:hover {
+    color: var(--color-black);
+    border-color: var(--color-lavender);
+    background: var(--color-lavender);
+}
+
+.mail-knapp {
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    margin-right: 10px;
+    color: var(--color-black);
+    border-radius: var(--border-radius-m);
+    max-width: 200px;
+    background: var(--color-lavender);
+    font-weight: var(--font-weight-medium);
+}
+   
+.mail-knapp:hover {
+    color: var(--color-black);
+    border-color: var(--color-lavender);
+    background: var(--color-lavender);
+} 
+
+
+/* Här börjar sektionen för corse information ----------------------------------------------------*/
+.Corsetype {
+    padding: 120px 0;
+    background: var(--color-lavender);
+}
+
+.Corsetype .section-content {
+    display: flex;
+    gap: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Corsetype .corse-image-wrapper .corse-image1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Här börjar checklistan/checkbox ---------------------------------------------------*/
+
+:root {
+    --font-size-m: 1rem;
+    --font-size-l: 1.3rem;
+    --font-size-xl: 1.5rem;
+    --font-size-xxl: 1.8rem;
+}
+
+.checkbox {
+    display: block;
+    background-color: var(--color-lavender);
+    min-height: 60vh;
+}
+
+.checkbox .checkbox-content {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.checkbox .checkbox-content .checkbox-details {
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    color: var(--color-black);
+    border-radius: var(--border-radius-m);
+    background-color: var(--color-lavender);
+
+    background: transparent;
+    font-weight: var(--font-weight-medium);
+}
+
+p {
+    margin-top: 20px;
+}
+
+.progress-container {
+    width: 100%;
+    max-width: 400px;
+    height: 24px;
+    background-color: var(--color-white);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.progress-bar {
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 0%;
+    background-color: palevioletred;
+    transition: width 0.3s ease;
+}
+
+#progressText {
+    margin-left: 20px;
+}
+
+.Bildgalleri {
+    background-color: var(--color-lavender);
+
+}
+
+.Bildgalleri h4 {
+    margin-left: 20px;
+}
+
+.Bildgalleri .Galleri {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    background: var(--color-lavender);
+    background-color: var(--color-lavender);
+}
+
+.Galleri img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    background: var(--color-lavender);
+}
+
+/* Responsive media query code for max width 900px---------------------------------- */
+
+@media screen and (max-width: 900px) {
+    }
