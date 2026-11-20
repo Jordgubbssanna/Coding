@@ -309,7 +309,151 @@ p {
     background: var(--color-lavender);
 }
 
-/* Responsive media query code for max width 900px---------------------------------- */
+/* Mobilanpassning */
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 900px) {
+ /* Toppspalt/Navigeringsmenyn */
+
+ header {
+        position: static;
     }
+
+ header .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 10px;
+    }
+
+.navbar .nav-logo .logo-text {
+     font-size: 1.3rem;
+    }
+
+.navbar .nav-menu {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 8px;
+    }
+
+.navbar .nav-menu .nav-link {
+     font-size: 0.8rem;
+     padding: 5px 8px;
+    }
+}
+ /* Hero-section och huvudinnehåll */
+.hero-section .section-content .hero-details {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+
+.hero-section {
+     min-height: auto;
+     padding: 30px 0;
+}
+
+.hero-section .section-content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 100%;
+     padding: 15px;
+}
+
+.hero-section .section-content .hero-details {
+     position: static;
+     transform: none;
+     width: 100%;
+     padding: 15px;
+     text-align: center;
+ }
+
+    /* Rubrik */
+.hero-section .hero-details .title {
+     font-size: 1.7rem;
+}
+
+    /* Underrubrik */
+.hero-section .hero-details .subtitle {
+      max-width: 100%;
+     font-size: 1.3rem;
+}
+
+    /* Brödtext */
+.hero-section .hero-details .description {
+     max-width: 100%;
+     font-size: 1rem;
+     margin: 20px 0;
+}
+
+    /* Knappar */
+.hero-section .hero-details .buttons {
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 12px;
+}
+
+.hero-section .hero-details .button {
+     margin: 0;
+     padding: 10px 16px;
+}
+
+    /* Bilder */
+.hero-image {
+     width: 100%;
+}
+
+.hero-img,.hero-image img {
+     width: 100%;
+     height: auto;
+     display: block;
+     object-fit: contain;
+}
+
+ /* Bildgalleri på mobil */
+.Bildgalleri {
+     padding: 20px 10px;
+}
+
+.Bildgalleri h4 {
+     margin: 0 10px 15px;
+     text-align: center;
+     font-size: 1.2rem;
+}
+
+.Bildgalleri .Galleri {
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+     gap: 10px;
+     padding: 10px;
+}
+
+.Galleri img {
+     width: 100%;
+     height: 180px;
+     object-fit: cover;
+}
+ /* Övriga sektioner */
+ .Corsetype .section-content {
+     flex-direction: column;
+     margin: 0;
+     padding: 20px;
+     gap: 25px;
+}
+
+.Corsetype .corse-image-wrapper .corse-image1 {
+     width: 220px;
+     height: 220px;
+}
+
+.checkbox .checkbox-content .checkbox-details {
+     margin-left: 10px;
+     margin-right: 10px;
+     padding: 10px;
+}
+
+.progress-container {
+     width: calc(100% - 40px);
+     margin-left: 20px;
+ }
