@@ -81,7 +81,7 @@ header .navbar {
 .navbar .nav-logo .logo-text {
     color: black;
     font-size: var(--font-size-xl);
-    font-weight: 300;
+    font-weight: 700;
 }
 
 .navbar .nav-menu {
@@ -166,30 +166,33 @@ header .navbar {
     color: var(--color-black);
     border-radius: var(--border-radius-m);
     max-width: 200px;
-    background: transparent;
+    background: var(--color-white);
     font-weight: var(--font-weight-medium);
+    transition: all 0.3s ease;
 }
 
 .hero-section .hero-details .button:hover {
     color: var(--color-black);
-    border-color: var(--color-lavender);
+    border-color: var(--color-black);
     background: var(--color-lavender);
 }
 
 .mail-knapp {
+    display: inline-block;
     padding: 10px 26px;
     border: 2px solid transparent;
     margin-right: 10px;
     color: var(--color-black);
     border-radius: var(--border-radius-m);
     max-width: 200px;
-    background: var(--color-lavender);
+    background: var(--color-white);
     font-weight: var(--font-weight-medium);
+    transition: all 0.3s ease;
 }
    
 .mail-knapp:hover {
     color: var(--color-black);
-    border-color: var(--color-lavender);
+    border-color: var(--color-black);
     background: var(--color-lavender);
 } 
 
