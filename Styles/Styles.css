@@ -310,7 +310,7 @@ p {
 }
 
 /* Mobilanpassning */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
  /* Toppspalt/Navigeringsmenyn */
 
@@ -339,79 +339,148 @@ p {
      font-size: 0.8rem;
      padding: 5px 8px;
     }
-}
+
  /* Hero-section och huvudinnehåll */
-.hero-section .section-content .hero-details {
-    position: absolute;
-    top: 40%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-}
+  .hero-section {
+
+        min-height: auto;
 
 
-.hero-section {
-     min-height: auto;
-     padding: 30px 0;
-}
+    }
 
-.hero-section .section-content {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     width: 100%;
-     padding: 15px;
-}
+    .hero-section .section-content {
 
-.hero-section .section-content .hero-details {
-     position: static;
-     transform: none;
-     width: 100%;
-     padding: 15px;
-     text-align: center;
- }
+        position: relative;
 
-    /* Rubrik */
-.hero-section .hero-details .title {
-     font-size: 1.7rem;
-}
+        display: block;
+
+        width: 100%;
+
+        padding: 0;
+
+    }
+
+    /* Bilden */
+
+    .hero-section .hero-image {
+
+        width: 100%;
+
+        height: 650px;
+
+        overflow: hidden;
+
+    }
+
+    .hero-section .hero-img {
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+        display: block;
+
+    }
+
+    /* Text ovanpå bilden */
+
+    .hero-section .section-content .hero-details {
+
+        position: absolute;
+
+        top: 50%;
+
+        left: 3%;
+
+        transform: translateY(-50%);
+
+        width: 45%;
+
+        text-align: left;
+
+        padding: 10px;
+
+    }
+
+    /* Huvudrubrik */
+
+    .hero-section .hero-details .title {
+
+        font-size: 1rem;
+
+        line-height: 1.2;
+        margin-bottom: 10px;
+
+        text-align: left;
+
+    }
 
     /* Underrubrik */
-.hero-section .hero-details .subtitle {
-      max-width: 100%;
-     font-size: 1.3rem;
-}
 
-    /* Brödtext */
-.hero-section .hero-details .description {
-     max-width: 100%;
-     font-size: 1rem;
-     margin: 20px 0;
-}
+    .hero-section .hero-details .subtitle {
+
+        font-size: 0.95rem;
+
+        line-height: 1.4;
+        margin-bottom: 10px;
+
+        max-width: 100%;
+
+        text-align: left;
+
+    }
+
+    /* Beskrivning */
+
+    .hero-section .hero-details .description {
+
+        font-size: 0.75rem;
+
+        line-height: 1.5;
+        margin: 10px 0 15px;
+
+        max-width: 100%;
+
+        text-align: left;
+
+    }
 
     /* Knappar */
-.hero-section .hero-details .buttons {
-     justify-content: center;
-     flex-wrap: wrap;
-     gap: 12px;
-}
 
-.hero-section .hero-details .button {
+    .hero-section .hero-details .buttons  {
+
+        display: flex;
+
+        flex-direction: row;
+
+        align-items: flex-start;
+
+        justify-content: flex-start;
+
+        gap: 8px;
+
+    }
+
+     .hero-section .hero-details .buttons .button  {
+    font-size: 0.5rem;
+     padding: 6px 12px;
+     width: auto;
+     max-width: 100%;
      margin: 0;
-     padding: 10px 16px;
+     white-space: nowrap;
 }
 
-    /* Bilder */
-.hero-image {
-     width: 100%;
+/* Knappen på sida 5 */
+.hero-section .hero-details .mail-knapp {
+    font-size: 0.7rem;
+    padding: 7px 10px;
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+    display: inline-block;
 }
-
-.hero-img,.hero-image img {
-     width: 100%;
-     height: auto;
-     display: block;
-     object-fit: contain;
-}
-
  /* Bildgalleri på mobil */
 .Bildgalleri {
      padding: 20px 10px;
@@ -435,6 +504,10 @@ p {
      object-fit: cover;
 }
  /* Övriga sektioner */
+
+ .Corsetype{
+    padding-top: 10px;
+ }
  .Corsetype .section-content {
      flex-direction: column;
      margin: 0;
@@ -456,4 +529,26 @@ p {
 .progress-container {
      width: calc(100% - 40px);
      margin-left: 20px;
+     
  }
+
+ .checkbox{
+    padding-top: 30px;
+ }
+
+  .sida-1 .hero-details{
+        width: 45%;
+    }
+
+    .sida-2 .hero-details {
+        width: 45%;
+    }
+    .hero-section.sida-3 .hero-details {
+        width: 55% 
+        
+    }
+.hero-section.sida-4 .hero-details {
+        width: 60% 
+        
+    }
+  }
